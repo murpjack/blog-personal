@@ -1,17 +1,13 @@
 ---
-title: Introduction
+slug: Introduction
+title: 第一个博文 - 介绍
 date: 2021-10-04
 description: 这段博文是我第一个试图写一个公开可用，中文的东西。
 tags:
-banner: ./birds_on_wall.jpg
 ---
-
-## 第一个博文 - 介绍
 
 这段博文是我第一个试图写一个公开可用，中文的东西。
 我很少用我中文能力为了我目前住在英国。
-
-![Birds on a wall](./birds_on_wall.jpg)
 
 最近我生活忙一点儿，那比生活不忙我更喜欢。我希望记载一些事情和东西那否则被不写了。
 
