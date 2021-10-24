@@ -13,7 +13,7 @@ type LayoutProps = { children: React.ReactNode; className?: string };
 const Layout = ({ children, className = `` }: LayoutProps) => (
   <React.Fragment>
     <Global
-      styles={(theme: any) => ({
+      styles={{
         '*': {
           boxSizing: `inherit`,
           letterSpacing: '1px',
@@ -31,10 +31,10 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
         '[hidden]': {
           display: `none`,
         },
-        '::selection': {
-          backgroundColor: theme.colors.text,
-          color: theme.colors.background,
-        },
+        // '::selection': {
+        //   backgroundColor: theme.colors.text,
+        //   color: theme.colors.background,
+        // },
         a: {
           transition: `all 0.3s ease-in-out`,
           color: `text`,
@@ -42,7 +42,7 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
         h2: {
           marginTop: '0 !important',
         },
-      })}
+      }}
     />
     <SEO />
     <SkipNavLink>Skip to content</SkipNavLink>
