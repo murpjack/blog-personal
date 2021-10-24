@@ -29,8 +29,6 @@ type PostsProps = {
 };
 
 const Homepage = ({ posts }: PostsProps) => {
-  const { basePath, blogPath } = useMinimalBlogConfig();
-
   return (
     <Layout>
       <Flex
@@ -41,23 +39,10 @@ const Homepage = ({ posts }: PostsProps) => {
         }}
       >
         <Heading variant='styles.h2'></Heading>
-        {/* <TLink as={Link} sx={{ variant: `links.secondary` }} href={replaceSlashes(`/${basePath}/${tagsPath}`)}>
-          View all tags
-        </TLink> */}
       </Flex>
       <Listing posts={posts} showTags={true} sx={{ mt: [4, 5] }} />
     </Layout>
   );
 };
-// <section sx={{ mb: [5, 6, 7], p: { fontSize: [1, 2, 3], mt: 2 } }}>
-//   <Hero />
-// </section>
-// <Title text="Latest Posts">
-//   <Link to={replaceSlashes(`/${basePath}/${blogPath}`)}>Read all posts</Link>
-// </Title>
-// <Listing posts={posts} showTags={false} />
-// <List>
-//   <Bottom />
-// </List>
 
 export default Homepage;
