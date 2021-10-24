@@ -13,35 +13,39 @@ type LayoutProps = { children: React.ReactNode; className?: string };
 const Layout = ({ children, className = `` }: LayoutProps) => (
   <React.Fragment>
     <Global
-      styles={{
-        '*': {
-          boxSizing: `inherit`,
-          letterSpacing: '1px',
-        },
-        html: {
-          WebkitTextSizeAdjust: `100%`,
-        },
-        img: {
-          borderStyle: `none`,
-        },
-        pre: {
-          fontFamily: `monospace`,
-          fontSize: `1em`,
-        },
-        '[hidden]': {
-          display: `none`,
-        },
-        // '::selection': {
-        //   backgroundColor: theme.colors.text,
-        //   color: theme.colors.background,
-        // },
-        a: {
-          transition: `all 0.3s ease-in-out`,
-          color: `text`,
-        },
-        h2: {
-          marginTop: '0 !important',
-        },
+      styles={(theme: any) => {
+        console.log({ theme });
+        return {
+          '*': {
+            boxSizing: `inherit`,
+            letterSpacing: '1px',
+          },
+          html: {
+            WebkitTextSizeAdjust: `100%`,
+          },
+          img: {
+            borderStyle: `none`,
+          },
+          pre: {
+            fontFamily: `monospace`,
+            fontSize: `1em`,
+          },
+          '[hidden]': {
+            display: `none`,
+          },
+          // '::selection': {
+          //   backgroundColor: theme.colors.text,
+          //   color: theme.colors.background,
+          // },
+          a: {
+            transition: `all 0.3s ease-in-out`,
+            color: `text`,
+          },
+          h2: {
+            marginTop: '0 !important',
+          },
+          layout: theme.layout,
+        };
       }}
     />
     <SEO />
