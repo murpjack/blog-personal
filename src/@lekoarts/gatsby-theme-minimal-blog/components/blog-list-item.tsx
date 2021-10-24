@@ -25,7 +25,7 @@ const BlogListItem = ({ post, showTags = true }: BlogListItemProps) => (
   <Box mb={4}>
     <TLink
       as={Link}
-      to={post.slug}
+      href={post.slug}
       sx={{
         textDecoration: 'none !important',
         borderBottom: '1px solid',

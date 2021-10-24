@@ -41,11 +41,11 @@ const Homepage = ({ posts }: PostsProps) => {
         }}
       >
         <Heading variant='styles.h2'></Heading>
-        {/* <TLink as={Link} sx={{ variant: `links.secondary` }} to={replaceSlashes(`/${basePath}/${tagsPath}`)}>
+        {/* <TLink as={Link} sx={{ variant: `links.secondary` }} href={replaceSlashes(`/${basePath}/${tagsPath}`)}>
           View all tags
         </TLink> */}
       </Flex>
-      <Listing posts={posts} showTags={false} sx={{ mt: [4, 5] }} />
+      <Listing posts={posts} showTags={true} sx={{ mt: [4, 5] }} />
     </Layout>
   );
 };

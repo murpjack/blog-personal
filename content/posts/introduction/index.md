@@ -1,9 +1,10 @@
 ---
-slug: Introduction
 title: 第一个博文 - 介绍
+slug: introduction
 date: 2021-10-04
 description: 这段博文是我第一个试图写一个公开可用，中文的东西。
 tags:
+  - zh
 ---
 
 这段博文是我第一个试图写一个公开可用，中文的东西。
