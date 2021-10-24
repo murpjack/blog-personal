@@ -14,7 +14,6 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
   <React.Fragment>
     <Global
       styles={(theme: any) => {
-        console.log({ theme });
         return {
           '*': {
             boxSizing: `inherit`,
