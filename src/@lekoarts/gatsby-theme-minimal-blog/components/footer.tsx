@@ -29,16 +29,14 @@ const Footer = () => {
         variant: `dividers.top`,
       }}
     >
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-        &copy; {new Date().getFullYear()} by {siteTitle}. All rights reserved.
-      </div>
+      <div style={{ display: 'flex', alignItems: 'center' }}>{siteTitle}。</div>
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <p>
           <Link
             aria-label="Link to the theme's GitHub repository"
             href='https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-minimal-blog'
           >
-            Theme
+            Original Theme
           </Link>
           {' by '}
           <Link
